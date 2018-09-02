@@ -1,0 +1,33 @@
+/*GERAL*/
+
+body {
+    /*define a cor de fundo de um elemento. Pode ser hexadecimal #000000, rgb (0,0,0) ou rgba (0,0,0,1)*/
+   background-color:  rgb(179, 130, 186);
+
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    
+}
+
+h1, p {
+    text-align: right;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/*SEÇÃO 1*/
+/* . seletor seleciona uma classe no html */
+
+.btn-roxo {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 3px;
+}
+
+.btn-transparente {
+    background-color: 
+}

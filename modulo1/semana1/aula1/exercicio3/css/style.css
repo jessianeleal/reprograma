@@ -1,0 +1,30 @@
+body {
+    background-image: url(../img/fundo.png);
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    
+}
+
+h2 {
+    color: purple;
+}
+
+div {
+    background-color: white;
+    width: 38%;
+    margin-left: 400px;
+    margin-top: 60px;
+   text-align: center;
+}
+
+img {
+  width: 87px;
+  margin: 8px;
+  margin-bottom: 30px;
+}
+
+.diva {
+    width: 233px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="nada.html" method="POST">
+            <div class="geral">
+                <h1>Queremos saber...</h1>
+                <div class="texto">
+                    <label class="texto__texto1" for="texto">Nome</label>
+                    <input class="texto__caixa" type="text" name="texto">
+                </div>
+
+                <div class="senha">
+                    <label class="senha__texto2" for="senha">Profissão</label>
+                    <input class="senha__caixa" type="password" name="senha">
+                </div>
+
+                <div class="total">
+                    <div class="opcoes-um">
+                        Escolha uma ou múltiplas opções
+                    </div>
+                    <div class="opcoes">               
+                        <input class="opcoes__multiplas" type="checkbox" name="opcoes" value="mulher" checked>
+                        <label class="opcoes__texto" for="opcoes">Mulher</label>
+                        <br>
+                        <input class="opcoes__multiplas" type="checkbox" name="opcoes" value="poderosa" checked>
+                        <label for="opcoes">Poderosa</label>
+                        <br>
+                        <input class="opcoes__multiplas" type="checkbox" name="opcoes" value="linda" checked>
+                        <label for="opcoes">Linda</label>
+                        <br>
+                        <input class="opcoes__multiplas" type="checkbox" name="opcoes" value="maravilhosa" checked>
+                        <label for="opcoes">Maravilhosa</label>
+                    </div>
+                </div>
+
+                <div class="opcao-um">
+                    <label for="opcao">Escolha uma opção</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="opcao" value="super-forca" checked><label for="opcao">Super força</label>
+                    <br>
+                    <input type="radio" name="opcao" value="ser-invisivel"><label for="opcao">Ser invisível</label>
+                    <br>
+                    <input type="radio" name="opcao" value="ler-mentes"><label for="opcao">Ler mentes</label>
+                    <br>
+                    <input type="radio" name="opcao" value="super-velocidade"><label for="opcao">Super velocidade</label>
+                </div>
+
+                <div class="selecao-um">
+                    <label for="selecao">Selecione dropdown</label>
+                </div>
+                <div class="selecao">                
+                    <select name="selecao">
+                        <option value="" disabled >Eu estou aqui agora querendo v</option> 
+                    </select>
+                </div>
+
+                <div class="valor-um">
+                    <label for="valor">Escolha um valor</label>
+                </div>
+                <div class="valor">
+                    <input class="valor-tamanho" type="number" name="valor" value="">
+                </div>
+
+                <div class="comentario-um">
+                    <label for="comentario">Comentários</label>
+                </div>
+                <div class="comentario">
+                    <textarea class="comentario-area" name="comentario" rows="10"></textarea>
+                </div>
+
+                <div class="submit-um">
+                    
+                </div>
+                <div class="submit">
+                    <input class="btn-1" name="submit" value="Reset"></select>
+                    <input class="btn-2" ame="submit" value="Submit"></select>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

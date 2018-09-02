@@ -1,0 +1,257 @@
+*/ {
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    
+}
+/* .container__parte1 {
+    width: 100%;
+    max-width: 100%;
+    
+ 
+} */
+
+.fundo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;  
+    /* margin-top: 5%;   */
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;  
+    padding-top: 6.2%; 
+    background-color: #a0bed0;
+    position: fixed;
+    margin-top: -5.5%;
+    min-height: 56px; 
+    padding-bottom: 1%;
+    z-index: 1030;
+  
+}
+
+.menu__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-right: 8%; 
+    
+}
+
+li {
+    list-style: none;
+    border: 5px solid transparent;
+    font-size: 1.2vw;
+    padding-right: 13%;
+    font-weight: lighter;
+    letter-spacing: 1.4px;
+    
+}
+
+.conteudo1 {
+    /* background-image: url(../img/foto-banner.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%; */
+    
+    width: 100%;
+    /* height: 0 auto; */
+    min-height: 35rem;
+    padding: 3rem 0;
+    /* background-image: url(../img/foto-banner.jpg); */
+    background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/foto-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    filter: grayscale(100%);
+     
+}
+
+.conteudo1:hover {
+    filter: grayscale(0);
+    transition: 3s;
+}
+ .conteudo {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;   
+    margin-top: 10%;
+    /* background: linear-gradient(rgba(255, 255, 255, .9)até rgba(255, 255, 255, 0));
+    opacity: 50%;
+    text- */
+    opacity: 70%;
+   
+}
+
+h1, h5 {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+
+    font-size: 7.7vw;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    /* margin-top: -1%; */
+    letter-spacing: 12px;
+    background: -webkit-linear-gradient(rgba(238, 238, 238, 0.938), rgba(51, 51, 51, 0.11));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+h5 {
+    max-width: 30rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    color: #ffffff73;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid b#829dad;
+    background-color: #829dad;
+    width: 14%;
+    height: auto;
+    padding: 1.5%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 3px;
+      
+}
+
+.btn:hover {
+    background-color: #36b0e0;
+}
+
+.texto {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -3%;
+    text-align: center;
+    background: #161616;
+    padding-bottom: 6%;
+    position: initial;
+    
+} 
+
+h4 {
+    color: #ffffff;
+    opacity: 50%;
+    font-size: 23px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    padding-top: 5%;
+}
+
+.paragrafo {
+    font-size: 14px;
+    color: rgb(138, 131, 131);
+    margin-top: -0.5%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+
+p {
+    font-size: 30pt;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-content: right;
+    margin-top: 100px;
+
+}
+
+.foto-siberia {
+    display: flex;
+    width: 100%;
+    max-width: 55%;
+    padding-left: 110px;
+}
+
+.foto-siberia img{
+    /* margin-left: 15%;
+    margin-top: 13%; */
+    width: 100%;
+    height: 100%; 
+    filter: grayscale(100%);
+    /* display: flex; */
+    
+
+
+}
+
+.foto-siberia img:hover {
+    filter: grayscale(0);
+    transition: 3s;
+}
+
+.siberia {
+    /* display: flex; */
+    width:30%;
+    height: 30%;
+    border-left: 7px solid #829dad;
+    padding-left: 29px;
+    margin-top: 170px;
+    padding-right: 76px;
+    
+    
+    
+    /* height: auto; */
+    /* padding-left: 10%;
+    margin-top: -30%; */
+    
+    
+
+}
+
+.siberia p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+    color: #969696;
+    
+}
+
+.siberia h3 {
+    margin-top: 0;
+    margin-bottom: -9px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    font-size: 20px;
+    
+    
+}

@@ -1,0 +1,293 @@
+*/ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Asap", Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    margin: 0 15%;
+}
+
+.navegacao__logo {
+    padding-left: 60px;
+    margin-top: 20px;
+}
+
+.navegacao__logo img{
+    width: 94px;
+    height: 41px;
+}
+
+.navegacao__lista {
+    margin-left: 100px;
+    padding-top: 15px;
+}
+
+.navegacao__lista ul {
+    display: flex;
+}
+
+.navegacao__lista li {
+    margin-left: 35px;   
+}
+
+.navegacao__lista-item {
+    text-transform: uppercase;
+    color: #c7c4c4f5;
+    font-size: 12.2px;   
+}
+
+.navegacao__lista-btn {
+    border: 1px solid #cdcf5ecc;
+    padding: 5px 12px;
+    color: #cdcf5ecc;
+    text-transform: uppercase;
+    font-size: 12.6px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.cabecalho {
+    background-image: url(../img/bg-banner.png);
+    width: 100%;
+    height: 570px; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    margin-top:32px;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 29px;
+    margin-bottom: 0;   
+}
+
+.cabecalho p {
+    text-align: center;
+    font-size: 16.6px;
+    color: #ffffffc9;
+    margin-top: 10px;
+}
+
+.cabecalho a {
+    background-color: #f5e76e;
+    padding: 10px 36px;
+    text-transform: uppercase;
+    font-size: 19.5px;
+    font-weight: bold;
+    color: #85702ce7;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sobre__globo {
+    width: 38.5%;
+    text-align: right;
+}
+
+.sobre__globo img {
+    width: 100px;
+    margin-top: 16px;
+}
+
+.sobre__gruppe {
+    width: 53%;
+    margin-right: 60px;
+}
+
+.sobre__gruppe h2 {
+    margin-bottom: 0;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.sobre__gruppe p {
+    width: 65%;
+    font-size: 17.5px;
+    margin-top: 10px;
+    color: #757474;    
+}
+
+.como-funciona {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.como-funciona h2 {
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.como-funciona__passo-a-passo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona__passo-a-passo_passos {
+    width: 25%;
+    max-width: 28ch;   
+}
+
+.como-funciona__passo-a-passo_passos p{
+    margin-bottom: 0;
+    font-size: 17.5px;
+    color: #757474;  
+}
+
+.como-funciona__passo-a-passo_passos img{
+    width: 120px;
+    height: 80px;
+}
+
+.como-funciona__passo-a-passo_passos-negrito {
+    font-weight: bold;
+    
+}
+
+.servicos {
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(../img/bg-servicos.png);
+    padding-top: 25px;
+}
+
+.servicos h2 {
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.servicos__consultoria-roteiro {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 190px;
+    padding-bottom: 50px;
+    
+}
+
+.servicos__consultoria-roteiro_servicos {
+    max-width: 31ch;
+    background-color: #81b3ff;
+    padding: 40px 50px; 
+    font-size: 17.5px;
+    color: #ffffffc7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.servicos__consultoria-roteiro_servicos h3 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.servicos__consultoria-roteiro_servicos img {
+    width: 140px;
+    height: 100px;
+}
+
+.servicos__consultoria-roteiro_servicos-btn{
+    background-color: #f5e76e;
+    padding: 10px 40px;  
+    text-transform: uppercase;
+    color: #85702ce7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.servicos__consultoria-roteiro_servicos-texto1 {
+    margin-bottom: 61px;
+}
+
+.servicos__consultoria-roteiro_servicos-texto2 {
+    margin-bottom: 25px;
+}
+
+.curiosidades {
+    text-align: center;
+    background-image: url(../img/bg-numeros.png);
+}
+
+.curiosidades h2 {
+    color: #ffffffc7;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+
+.curiosidades__numeros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 0 20%;
+}
+
+.curiosidades__numeros-dados {
+    width: 30%;
+    max-width: 26ch;
+    font-size: 15px;
+    color: #ffffffc7;
+}
+
+.curiosidades__numeros-dados-amarelo {
+    color: #f5e76e;
+    font-size: 45px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__redes-sociais-icones img {
+    width: 32px;
+    height: 32px;
+}
+

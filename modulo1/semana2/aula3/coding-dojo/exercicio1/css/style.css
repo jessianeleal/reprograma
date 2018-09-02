@@ -1,0 +1,29 @@
+body {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section1 {
+    display: inline-block;
+    width: 45%;
+    margin-left: 50px;
+
+}
+
+.section2 {
+    display: inline-block;
+    width: 45%;
+    margin-left: 50px;
+
+}
+
+main {
+    margin-left: 100px;
+    vertical-align: center;
+    margin-top: 110px;
+}
+
+h1 {
+    font-size: 25pt;
+}

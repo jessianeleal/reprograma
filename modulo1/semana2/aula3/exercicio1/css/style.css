@@ -1,0 +1,145 @@
+*/ {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A;
+    display: inline-block;
+    margin: 0;
+}
+
+main {
+    width: 90%;
+}
+
+.secao {
+    width: 50%;
+    margin-left: 43%;
+    text-align: left;
+    margin-top: -515px;
+    
+}
+
+aside {
+    width: 12%;
+    border: 1px solid rgb(199, 183, 183);
+    padding: 15px 20px 290px 20px;
+    margin-left: 280px;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-bottom: 23px;
+}
+
+article {
+    text-align: left;
+    font-size: 18pt;
+}
+
+.foto {
+    margin-top: 32px;
+}
+
+h5{
+    color: #9013FE;
+    margin-top: 30px;
+}
+
+h6 {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.nome {
+    font-style: bold;
+}
+
+.baixo {
+    font-size: 12px;
+    font-style: normal;
+    margin-top: -28px;
+}
+
+.logo {
+    display: inline-block;
+    position: fixed;
+    right: 290px;
+    margin-right: 450px;
+    padding-right: 200px;
+    top: 26px;
+}
+
+.menu {
+    display: block;
+
+    border-bottom: 2px solid rgb(245, 229, 229);
+    
+    height: 50px;
+    margin-top: 15px;
+    
+}
+
+.menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: fixed;
+    top: -20px;
+    left: 800px;
+    margin-top: 30px;
+    
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 2s;
+    text-align: right;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #9013FE;
+    text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+    body {
+        width: 100%;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 520px;
+        display: block;
+        width: 100%;
+    }
+
+    secao {
+        text-align: justify;
+        width: 100%;
+    }
+   
+    .titulo {
+        display: block;
+        width: 100%;
+        text-align: 
+    }
+
+    
+    
+    
+}
+

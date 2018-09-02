@@ -1,0 +1,122 @@
+/* Propriedades gerais */
+body {
+    background-color: rgba(179, 130, 186, 0.36);
+    /* define a cor de fundo de um elemento. pode ser um hexadecimal #000000, RGB (0,0,0) ou RBGA (0,0,0,0).
+    RGB : cores
+    RGBA : o último elemento define a transparencia das cores
+    */
+  
+   font-family: 'Lato', Arial, Helvetica, sans-serif; 
+    /* sempre que uma fonte não for sistemica, precisa estar entre aspas simples */
+  }
+  
+  h1, p, .btn-grupo {
+    text-align: right;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    text-align: right;
+    width: 39%;
+  }
+  
+  /* Secção 1 */
+  /* div
+   width : largura */
+  
+  .secao {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;  
+  }
+  
+  /* .seletor seleciona uma classe no html */
+  .btn {
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #5D1277;  
+    border-radius: 3px;
+  }
+  
+  .btn-download {
+    background-color: #5D1277;
+    color: #FFFFFF;
+  }
+  
+  /* padding: espaçamento interno 
+  margin: espaçamento externo 
+  border-radius: para arredondar a borda*/
+  
+  .btn-read {
+    background-color: transparent;
+    color: #5D1277;
+  }
+  
+  /* border - borda: tamanho tipo de borda cor de borda  */
+  
+  /* Para cores:
+  Adobe Color CC 
+  coolors.co - para criação de paleta de cores 
+  Para fontes:
+  - Google Fonts
+  */
+
+  @media (max-width: 768px) {
+
+    body {
+        width: 80%;
+        vertical-align: middle;
+    }
+
+    .secao {
+        width: 100%;
+        display: block;
+        text-align: center;
+        vertical-align: middle;
+    }
+    h1 {
+      width: 100%;
+      display: block;
+      vertical-align: middle;
+      text-align: center;
+      margin-left: 70px; 
+      margin-top: 90px;
+    }
+
+    p {
+        width: 80%;
+        display: block;
+        vertical-align: middle;
+        text-align: justify;
+        margin-left: 130px;
+        
+    }
+
+    .btn {
+        width: 100%;
+        display: inline-block;
+        vertical-align: right;
+        text-align: center;
+    }
+
+    .btn-download {
+        width: 20%;
+        
+    }
+
+    .btn-read {
+        width: 20%;
+        margin-right: 160px;
+    }
+    
+    .celular {
+        width: 90%;
+        display: block;
+        /* vertical-align: bottom; */
+        transform: rotateZ(-90deg);
+        margin-top: -90px;
+        margin-left: 100px;
+    }
+  }
+ 
