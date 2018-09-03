@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Flamenco" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600,800" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -15,11 +15,11 @@
             </div>
             <div class="navegacao__lista">
                 <ul>
-                    <li><a class="navegacao__lista-item href="#">Sobre</a></li>
-                    <li><a class="navegacao__lista-item href="#">Como funciona</a></li>
-                    <li><a class="navegacao__lista-item href="#">Roteiros e consultoria</a></li>
-                    <li><a class="navegacao__lista-item href="#">Contato</a></li>
-                    <li><a class="navegacao__lista-btn class="navegacao__lista-btn" href="#">Quero agora!</a></li>
+                    <li><a class="navegacao__lista-item" href="#">Sobre</a></li>
+                    <li><a class="navegacao__lista-item" href="#">Como funciona</a></li>
+                    <li><a class="navegacao__lista-item" href="#">Roteiros e consultoria</a></li>
+                    <li><a class="navegacao__lista-item" href="#">Contato</a></li>
+                    <li><a class="navegacao__lista-btn" href="#">Quero agora!</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,6 +58,9 @@
                             Se você gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.
                         </p>
                     </div>
+                    <div class="como-funciona__passo-a-passo_passos-seta">
+                        <img src="img/seta.jpg" alt="">
+                    </div>
                     <div class="como-funciona__passo-a-passo_passos">
                         <img src="img/passo-02.png" alt="Segundo passo">
                         <p>
@@ -65,6 +68,9 @@
                             Montamos o melhor roteiro</span><br>
                             que se encaixa com as suas especificações.
                         </p>
+                    </div>
+                    <div class="como-funciona__passo-a-passo_passos-seta">
+                        <img src="img/seta.jpg" alt="">
                     </div>
                     <div class="como-funciona__passo-a-passo_passos">
                         <img src="img/passo-03.png" alt="Terceiro passo">
@@ -104,7 +110,7 @@
                         <p class="curiosidades__numeros-dados-amarelo">
                             80%
                         </p>
-                        <p>
+                        <p class="curiosidades__numeros-dados-texto">
                             É o que você economiza quando planeja uma viagem de antemão
                         </p>
                     </div>
@@ -112,15 +118,17 @@
                         <p class="curiosidades__numeros-dados-amarelo">
                             50+
                         </p>
-                        <p>
-                            Localidades diferentes nossos consultores conhecem no mundo inteiro
+                        <p class="curiosidades__numeros-dados-texto">
+                            Localidades diferentes nossos consultores conhecem no mundo
+                            <br>
+                            inteiro
                         </p>
                     </div>
                     <div class="curiosidades__numeros-dados">
                         <p class="curiosidades__numeros-dados-amarelo">
                             1000+
                         </p>
-                        <p>
+                        <p class="curiosidades__numeros-dados-texto">
                             Brasileiros viajaram no ano de 2016
                         </p>
                     </div>
@@ -154,7 +162,7 @@
                         <div class="contato__formulario_mensagem">
                             <label for="mensagem">Mensagem</label>
                             <br>
-                            <textarea name="mensagem" rows="10"></textarea>
+                            <textarea name="mensagem" rows="8"></textarea>
                         </div>
                         <div class="contato__formulario_submit">
                             <input name="submit" value="Enviar">
@@ -166,7 +174,7 @@
                 <h2>Fique ligado nas novidades do Gruppe!</h2>
                 <div class="newsletter__novidades">
                     <form class="newsletter__novidades_formulario" action="nada.html" method="GET">
-                        <input class="newsletter__novidades_formulario-email" type="text" name="novidades" placeholder="Insira seu email">
+                        <input class="newsletter__novidades_formulario-email" type="text" name="novidades" placeholder="   Insira seu email">
                         <input class="newsletter__novidades_formulario-submit" name="submit" value="Começar agora">
                     </form>
                 </div>
@@ -186,17 +194,17 @@
                     </nav>
                 </div>
                 <div class="footer__logo">
-                    <img src="img/logo-footer.png" alt="Logo">
-                    <p>Sharing Experiences</p>
-                    <a href="#">email: contato@gruppe.com.br</a>
-                    <p>Copyright 2017.Gruppes Viagens</p>
+                    <a href="#"><img src="img/logo-footer.png" alt="Logo"></a>
+                    <p class="footer__logo-texto">Sharing Experiences</p>
+                    <a class="footer__logo-texto2" href="#">email: contato@gruppe.com.br</a><br>
+                    <p class="footer__logo-texto3">© Copyright 2017.Gruppes Viagens</p>
                 </div>
                 <div class="footer__redes-sociais">
                     <p>
                         Siga-nos nas Redes Sociais:
                     </p>
                     <div  class="footer__redes-sociais-icones">
-                        <a href="#"><img src="img/fb-icon.png" alt="Icone do Facebook"></a>
+                        <a class="footer__redes-sociais-icones-facebook" href="#"><img src="img/fb-icon.png" alt="Icone do Facebook"></a>
                         <a href="#"><img src="img/yt-icon.png" alt="Icone do Youtube"></a>
                     </div>
                 </div>

@@ -144,6 +144,7 @@ li, a {
     font-family: "Flamenco", Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .como-funciona__passo-a-passo {
@@ -173,11 +174,21 @@ li, a {
     
 }
 
+.como-funciona__passo-a-passo_passos-seta {
+    margin: 0 30px;
+}
+
+.como-funciona__passo-a-passo_passos-seta img {
+    width: 40px;
+    height: 20px;
+}
+
 .servicos {
     text-align: center;
     margin-top: 100px;
     background-image: url(../img/bg-servicos.png);
     padding-top: 25px;
+    background-size: cover;
 }
 
 .servicos h2 {
@@ -238,6 +249,9 @@ li, a {
 .curiosidades {
     text-align: center;
     background-image: url(../img/bg-numeros.png);
+    background-size: cover;
+    width: 100%;
+    height: 220px;
 }
 
 .curiosidades h2 {
@@ -259,35 +273,211 @@ li, a {
 
 .curiosidades__numeros-dados {
     width: 30%;
-    max-width: 26ch;
+    max-width: 24ch;
     font-size: 15px;
     color: #ffffffc7;
 }
 
 .curiosidades__numeros-dados-amarelo {
     color: #f5e76e;
+    font-size: 48px;
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+}
+
+.curiosidades__numeros-dados-texto {
+    margin-top: -5px;
+}
+
+.contato {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #ebe9e9ad;
+    padding-bottom: 80px;
+}
+
+.contato h2 {
+    font-size: 30px;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.contato__formulario {
+    width: 40%;
+    margin: 0px 30%;
+    font-size: 15px;
+}
+
+.contato__formulario_dados {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.contato__formulario_dados-nome {
+    margin-right: 18px;
+}
+
+.contato__formulario_assunto {
+    margin-top: 10px;
+}
+
+.contato__formulario input{
+    background-color: #f5e86e88;
+    border: 1px solid #f5e86eec;
+    width: 26ch;
+    height: 18px;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+
+.contato__formulario_assunto label {
+    margin-left: -349px;
+}
+
+.contato__formulario_assunto input{
+    padding: 1px 106px;
+}
+
+.contato__formulario_mensagem {
+    margin-top: 10px;
+}
+
+.contato__formulario_mensagem label {
+    margin-right: 330px;
+}
+
+.contato__formulario_mensagem textarea{
+    width: 400px;
+    background-color: #f5e86e88;
+    border: 1px solid #f5e86efa;
+    margin-top: 8px;
+    border-radius: 2px;
+    resize: none;
+}
+
+.contato__formulario_submit{
+    margin-top: 20px;
+}
+.contato__formulario_submit input {
+    width: 405px;
+    text-align: center;
+    height: 35px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #3E89EB;
+    border: 1px solid #3E89EB;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #f5e76e;
+    height: 210px;
+}
+
+.newsletter h2 {
+    margin-top: 0;
+    padding-top: 40px;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     font-size: 45px;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.newsletter__novidades_formulario-email {
+    width: 50ch;
+    height: 35px;
+    border: 1px solid #d8d6d6af;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.newsletter__novidades_formulario-email::placeholder {
+    color: #0000002c;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.newsletter__novidades_formulario-submit {
+    width: 26ch;
+    height: 38px;
+    border: 0px solid #bd1313;
+    margin-right: 20px;
+    background-color: #bd1313;
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #ffffffe3;
+    background-color: #000000cb;
+    font-size: 12.5px;
+    padding-top: 8px;
+    height: 135px;
+}
+
+.footer a {
+    color: #ffffff98;
+}
+
+.footer__navegacao {
+    margin-right: 180px;   
+    line-height: 18px; 
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+}
+
+.footer__logo {
+    text-align: center;
+    margin-right: 130px;
+    font-size: 10px;
+}
+
+.footer__logo img {
+    width: 100px;
+    height: 45px;
+    padding-top: 5px;
+}
+
+.footer__logo-texto {
+    margin: 0 0 1px 0;
+    font-family: "Flamenco", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #ffffff98;
 }
 
 
+.footer__logo a {
+    color: #ffffff;
+}
 
+.footer__logo-texto3 {
+    margin-top: 15px;
+    color: #ffffff98;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.footer__redes-sociais {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 .footer__redes-sociais-icones img {
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
+}
+
+.footer__redes-sociais-icones-facebook {
+    margin-right: 20px;
 }
 
