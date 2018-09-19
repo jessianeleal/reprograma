@@ -22,5 +22,5 @@ botao.addEventListener("click", function(evento){
         inputMensagem.focus();
         return false;
     }
-    alert("Mensagem enviada com sucesso!)
+alert("Mensagem enviada com sucesso!")
 })

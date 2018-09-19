@@ -85,4 +85,16 @@ botao.addEventListener("click", function(evento){
     else if (radioItem.value === "Senior") {
         console.log("5+ anos de experiência");
     }   
+
+    alert("Cadastro realizado com sucesso!")
+
+    document.querySelector("body").style.bgColor = "#fff";
+
+    const form = this.closest("form");
+    form.submit();
+})
+
+inputConfirmaEmail.addEventListener("paste", function(evento){
+    evento.preventDefault();
+    return false;
 })
