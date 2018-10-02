@@ -1,14 +1,20 @@
 // Variáveis
-$cor-primaria: rgb(179, 56, 131);
+$cor-primaria: #829dad;
 $cor-branca: #fff;
 
-@mixin height_display {
-    height: auto;
-    display: block;
+@mixin height_display{
+  height: auto;
+  display: block;
 }
 
-@mixin rgba_opacity ($cor: $cor-primaria, $opacidade: 1) {
+@mixin rgba_opacity($cor: $cor-primaria, $opacidade: 1){
   color: rgba($cor, $opacidade);
+}
+
+@mixin borda-arredondada($raio: 5px){
+  border-radius: $raio;
+  -moz-border-radius: $raio; 
+  -webkit-border-radius: $raio;
 }
 
 * {
@@ -33,22 +39,22 @@ ul, li {
 a {
   text-decoration: none;
   color: $cor-primaria;
-  &:hover {
-    color: #3c6360;
-  }
+}
+
+a:hover {
+  color: #3c6360;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
-}
-
-@media (max-width: 960px) {
-  .container {
-    width: 100%;
-    padding: 0 4%;
+  @media (max-width: 960px) {
+      width: 100%;
+      padding: 0 4%;
   }
 }
+
+
 
 .transition {
   transition: all 1s;
@@ -70,26 +76,26 @@ a {
     color: $cor-branca;
     margin-right: 50px;
     &:hover {
-     @include rgba_opacity($cor-branca, .75);
+      @include rgba_opacity($opacidade:.8);
     }
   }
   &__mobile {
     display: none;
   }
+
+  @media (max-width: 420px) {
+      background-color: $cor-branca;
+      &__link {
+        display: none;
+      }
+      &__mobile {
+        display: block;
+      }
+  }
 }
 
-@media (max-width: 420px) {
-  .nav {
-    background-color: $cor-branca;
-  }
 
-  .nav__link {
-    display: none;
-  }
-  .nav__link__mobile {
-    display: block;
-  }
-}
+
 
 .banner {
   background: url("../images/foto-banner.jpg");
@@ -102,48 +108,37 @@ a {
   background-size: cover;
   &__title {
     font-size: 105px;
-   @include rgba_opacity($cor-branca, .9);
+    @include rgba_opacity( $cor-branca, .9 );
     text-transform: uppercase;
     font-family: 'Varela Round';
     font-weight: 100;
     padding-top: 80px;
     letter-spacing: 8px;
+    @media (max-width: 850px) { 
+        font-size: 60px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 80px;
+    }
   }
   &__subtitle {
-   @include rgba_opacity($cor-branca, .7);
+    @include rgba_opacity($cor-branca,  0.7);
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
+    @media (max-width: 850px) {
+        font-size: 18px;
+    }
   }
   &__btn {
     display: inline-block;
     margin-top: 40px;
   }
-}
-
-@media (max-width: 420px) {
-  .banner {
-    height: 400px;
-    background-position: -360px 0;
+  @media (max-width: 420px) {
+      height: 400px;
+      background-position: -360px 0;
   }
-}
 
-@media (max-width: 1024px) {
-  .banner__title {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 850px) {
-  .banner__title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 850px) {
-  .banner__subtitle {
-    font-size: 18px;
-  }
 }
 
 .btn {
@@ -151,16 +146,15 @@ a {
   text-transform: uppercase;
   font-size: 14px;
   padding: 15px 30px;
-  border-radius: 5px;
+  @include borda-arredondada;
   &--primary {
     background-color: $cor-primaria;
     &:hover {
       background-color: #36b0e0;
       color: $cor-branca;
     }
-  }
+ }
 }
-
 .about {
   background-color: rgba(22, 22, 22, .8);
   text-align: center;
@@ -189,8 +183,7 @@ a {
     &__img {
       max-width: 740px;
       width: 100%;
-      @include height_display
-      
+      @include height_display;
     }
   }
   &--groenlandia,
@@ -202,9 +195,8 @@ a {
     &__img {
       max-height: 300px;
       width: 100%;
-      @include height_display
-      
-    } 
+      @include height_display;
+    }
     &__wrapper-img {
       width: 50%;
     }
@@ -226,91 +218,64 @@ a {
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 80px;
+    @media (max-width: 960px) {
+        margin-top: 0;
+    }
   }
   &_paragraph {
-   @include rgba_opacity($cor-branca,.5);
+    @include rgba_opacity($opacidade: .5);
+
     &--groenlandia {
       max-width: 80%;
     }
   }
-}
 
-@media (max-width: 960px) {
-  .destination__border {
-    display: none;
-  }
-}
+  @media (max-width: 960px) {
+    &__border {
+      display: none;
+    }
+    &--siberia {
+      display: block;
+      text-align: center;
+    }
+    &--siberia__img {
+      max-width: 100%;
+    }
+    &--groenlandia,
+    &--antartida {
+      @include height_display;
+      &__img{
+          max-height: 100%;
+      }
+      &__wrapper-img {
+      width: 100%;
+    }
+   }
 
-@media (max-width: 960px) {
-  .destination--siberia {
-    display: block;
-    text-align: center;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination--siberia__img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination--groenlandia,
-  .destination--antartida {
-    @include height_display
-  }
-
-  .destination--groenlandia {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination--groenlandia__img,
-  .destination--antartida__img {
-    max-height: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination__description {
+  &--groenlandia {
+      margin-bottom: 40px;
+    }
+  &__description {
     width: 100%;
     text-align: center;
     padding: 40px;
   }
-}
-
-@media (max-width: 960px) {
-  .destination__title {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination_paragraph--groenlandia {
+  &_paragraph--groenlandia {
     max-width: 100%;
   }
-}
-
-@media (max-width: 960px) {
-  .destination--groenlandia__wrapper-img,
-  .destination--antartida__wrapper-img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination__description--antartida {
+  &__description--antartida {
     text-align: center;
   }
+  }
 }
+
 
 .footer {
   background-color: #161616;
   margin-top: 80px;
   text-align: center;
   padding: 40px;
- @include rgba_opacity($cor-branca,.5);
+  @include rgba_opacity($cor-branca, .5);
   &__socialmedia {
     display: flex;
     align-items: center;
@@ -320,12 +285,15 @@ a {
   &__twitter,
   &__facebook,
   &__youtube {
-    opacity: 0.5;
-    margin: 0 10px;
-    &__:hover {
+  opacity: 0.5;
+  margin: 0 10px;
+    &:hover{
       opacity: 1;
     }
   }
 }
+
+
+
 
 

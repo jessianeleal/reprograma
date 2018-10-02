@@ -1,3 +1,34 @@
+/*Variaveis*/
+$cor-primaria: #674582;
+$cor-secundaria: #C083B9;
+$font-size: 10px;
+
+
+/* Mixin com parametros */
+@mixin flexbox($flex-direction: row, $align-items: normal, $justify-content: normal){
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    
+}
+
+/* Mixin sem parametros */
+/*
+@mixin flexbox{
+    display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+}*/
+
+
+
 /* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
 /* --- GERAL --- */
 /*
@@ -8,35 +39,12 @@ width: %
 max-width: % ou px
 */
 
-$cor-branco: white;
-$cor-lilas: #C083B9;
-$cor-roxo2: #63458a;
-$cor-roxo: #674582;
-$size-1-5: 1.5rem;
-$size-1-6: 1.6rem;
-$size-1-7: 1.7rem;
-$size-1-8: 1.8rem;
-$size-2: 2rem;
-$size-2-5: 2.5rem;
-
-
-@mixin flexbox ($direction: column, $align-items: center){
-    display: flex;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    flex-direction: $direction;
-    align-items: $align-items;
-
-}
-
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 10px; /* definir uma font-size padrão */
+    font-size: $font-size; /* definir uma font-size padrão */
 }
 
 body {
@@ -76,10 +84,10 @@ li {
     font-weight: bold;
     padding: 1rem 3rem;
     border-radius: 5px;
-    font-size: $size-1-8;
+    font-size: 1.8rem;
     &_roxo {
-        color: $cor-branco;
-        background-color: $cor-lilas;
+        color: white;
+        background-color: $cor-secundaria;
         display: block;
         max-width: 250px;
         text-align: center;
@@ -95,18 +103,20 @@ li {
             transform: translateY(-.5rem);
             box-shadow: 0 5px 5px rgba(0,0,0,.2);
         }
+        
+        
     }
     &_center {
         margin: 0 auto;
-    }    
+    }
 }
 
 
 
 /* --- NAV --- */
 .navegacao {
-    background-color: $cor-roxo;
-    color: $cor-branco;
+    background-color: $cor-primaria;
+    color: white;
     text-transform: uppercase;
     box-shadow: 0px 5px 5px rgba(0,0,0,.2);
     padding: 1.5rem;
@@ -116,18 +126,15 @@ li {
     &__logo {
         max-width: 200px;
     }
-    
     &__box {
-        @include flexbox($direction: row, $align-items: center);
-        justify-content: space-between;
+       @include flexbox( $align-items: center, $justify-content: space-between);
     }
-    
     &__itens {
         position: absolute;
         right: -700px;
         top: 85px;
         width: 100%;
-        background-color: $cor-roxo;
+        background-color: $cor-primaria;
         text-align: center;
         padding: 3rem 0;
         transition: right 1s;
@@ -136,27 +143,27 @@ li {
             right: 0;
             top: 85px;
             width: 100%;
-            background-color: $cor-roxo;
+            background-color: $cor-primaria;
             text-align: center;
             padding: 3rem 0;
             transition: right 1s;
         }
-        & li > a {
+        li > a {
             transition: all .2s;
             &:hover {
-                color: $cor-lilas;
+                color: $cor-secundaria;
             }
         }
     }
     &__menu-hamburguer img {
-        background-color: $cor-lilas;
+        background-color: $cor-secundaria;
         border-radius: 5px;
     }
     &__nav {
         margin-bottom: 3rem;
         margin-right: 2rem;
-        & li {
-            font-size: $size-1-5;
+        li {
+            font-size: 1.5rem;
             margin: 1rem;
         }
     }
@@ -175,108 +182,111 @@ li {
     background-size: cover;
     background-position: center 14%;
     background-repeat: no-repeat;
-    @include flexbox($direction: row, $align-items: flex-end);
+    @include flexbox($align-items: flex-end);
     text-align: center;
     padding: 11rem 2rem 5rem 2rem;
-    color: $cor-branco;
+    color: white;
 }
-
-.principal {
+.principal{
     &__titulo {
         text-transform: uppercase;
-        font-size: $size-2-5;
+        font-size: 2.5rem;
         font-weight: 900;
     }
     &__sub {
         font-weight: 300;
         margin: 2rem 0 3rem 0;
-        font-size: $size-1-5;
+        font-size: 1.5rem;
     }
 }
 
-
 /* --- SECTION MARAVILHOSAS --- */
-.maravilhosas {
+.maravilhosas{
     &__titulo {
         font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-        color: $cor-roxo2;
-        font-size: $size-2;
+        color: $cor-primaria;
+        font-size: 2rem;
         text-align: center;
     }
     &__box {
-        @include flexbox($direction: row, $align-items: center);
+        @include flexbox($justify-content: space-around);
         flex-wrap: wrap;
-        justify-content: space-around;
+        
         text-align: center;
-        color: $cor-roxo2;
+        color: $cor-primaria;
     }
     &__perfil {
         max-width: 120px;
         margin: 2rem;
-        & img {
-            background-color: $cor-roxo2;
+        img {
+            background-color: #63458a;
             border-radius: 10px;
         }
-        & a:hover {
-            text-decoration: underline;
+        a {
+            img {
+                transition: all .5s;
+            }
+            &:hover {
+                text-decoration: underline;
+                img {
+                    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+                }
+            }
         }
-        & a img {
-            transition: all .5s;
-        }
-        & a:hover img {
-            box-shadow: 0 3px 10px rgba(0,0,0,.2);
-        }
-    }    
+    }
 }
 
 
 /* --- FOOTER --- */
 .rodape {
     background-color: #323534;
-    color: $cor-branco;
+    color: white;
     font-size: .9rem;
-    @include flexbox($direction: column, $align-items: center);
+    @include flexbox($flex-direction: column, $align-items: center);
     padding-top: .8rem;
     &__principal {
-        @include flexbox($direction: column, $align-items: center);
-        justify-content: space-between;
+        @include flexbox($flex-direction: column, $align-items: center, $justify-content: space-between);
         text-align: center;
         padding: 1.5rem 0;
-        & > * {
+        > * {
             margin: 1rem 0;
         }
     }
-    &__navegacao > li {
-        font-size: 1.1rem;
-        margin: 1rem;
-    }
-    &__navegacao a {
-        transition: all .5s;
-        &:hover {
-            color: $cor-lilas;
+    &__navegacao {
+        > li {
+            font-size: 1.1rem;
+            margin: 1rem;
+        }
+        a {
+            transition: all .5s;
+            &:hover {
+                color: $cor-secundaria;
+            }
         }
     }
+
     &__logo {
         max-width: 200px;
     }
+
     &__redes-sociais {
-        & a {
-            @include flexbox($direction: row, $align-items: center);
-            justify-content: center;
+        a {
+            @include flexbox($align-items: center, $justify-content: center);
             transition: all .5s;
             &:hover {
-                color: $cor-lilas;
+                color: $cor-secundaria;
             }
         }
-        & img {
+        img {
             max-width: 10px;
             margin-right: .5rem;
         }
-        & span {
-            display: flex;
-            font-size: $size-1-5;
+        span {
+            @include flexbox;
+            font-size: 1.5rem;
         }
     }
+
     &__cc {
         width: 100%;
         background-color: #292A2A;
@@ -284,18 +294,21 @@ li {
         opacity: 0.5;
         text-align: center;
     }
+    
 }
+
+
 
 /** ---- PERSONALIDADE ---- **/
 /* --- HEADER --- */
  .header-personalidade {
-    @include flexbox($direction: row, $align-items: flex-end);
+    @include flexbox(column, flex-end, center);
     background-size: cover;
-    justify-content: center;
     padding: 0 2rem;
-    color: $cor-branco;
+    color: white;
     min-height: 80vh;
     height: 500px;
+
     &__titulo {
         text-align: center;
         font-size: 2.6rem;
@@ -303,43 +316,47 @@ li {
     }
 }
 
+
+
 /* --- PEFIL DIVA--- */
 .secao-diva {
-    @include flexbox($direction: column, $align-items: center);
-    justify-content: center;
+    @include flexbox(column, center, center);
     padding: 5rem 2rem;
     margin: 0 auto;
     &__titulo {
         text-align: center;
         font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-        font-size: $size-2;
-        color: #674582;
+        font-size: 2rem;
+        color: $cor-primaria;
         &_esq {
             margin-right: auto;
         }
     }
-    & p {
-        color: $cor-roxo2;
-        font-size: $size-1-6;
+    p {
+        color: #63458a;
+        font-size: 1.6rem;
         line-height: 1.5;
-    }    
+    }
     &__introducao {
-        @include flexbox($direction: column, $align-items: center);
+        @include flexbox(column, center);
+
     }
     &__foto-perfil {
         max-width: 18rem;
         margin: 1rem;
-        background-color: $cor-roxo2;
-    }    
+        background-color: #63458a;
+    }
     &__citacao p {
         font-weight: bold;
         border: 1px solid #63458a;
         text-align: center;
         padding: 1rem;
-        font-size: $size-1-7;
-    }    
+        font-size: 1.7rem;
+    }
     &__historia {
-        @include flexbox($direction: column, $align-items: center);
+        @include flexbox(column, center);
+        flex-direction: column;
+        align-items: center;
         padding: 5rem 0;
     }
 }
@@ -347,32 +364,29 @@ li {
 /* --- AUTORA --- */
 .secao-autora {
     background-color: #e4b7e5;
-    display: flex;
-    justify-content: center;
-    & > div {
+    @include flexbox($justify-content: center);
+     > div {
         text-align: center;
-        @include flexbox($direction: column, $align-items: center);
-        justify-content: space-around;
+        @include flexbox(column, center, space-around);
         padding: 2rem 0;
-    }    
+    }
+
     &__foto {
         max-width: 150px;
-    }    
+    }
     &__dados {
-        color: $cor-roxo2;
-        font-size: $size-1-6;
+        color: #63458a;
+        font-size: 1.6rem;
         line-height: 1.5;
         margin-top: 1rem;
-        & p {
-            margin: 0;
-        }
-    }    
-    & a {
+    }
+
+    a {
         font-style: italic;
         text-decoration: underline;
-    }    
+    }
+    
 }
-
 .secao-cta {
     text-align: center;
     padding: 4rem 0;
@@ -384,7 +398,7 @@ li {
     /* --- NAV --- */
     .navegacao__itens {
         position: static;
-        display: flex;
+        @include flexbox;
         padding: 0;
         width: auto;
     }
@@ -394,10 +408,8 @@ li {
     }
     
     .navegacao__itens ul {
-        display: flex;
-        justify-content: space-around;
+        @include flexbox($align-items: center, $justify-content: space-around);
         width: 100%;
-        align-items: center;
         text-align: center;
     }
     
@@ -422,7 +434,7 @@ li {
     }
     
     .principal__sub {
-        font-size: $size-1-8;
+        font-size: 1.8rem;
     }
 
     .principal__btn {
@@ -440,7 +452,7 @@ li {
     }
 
     .maravilhosas__perfil p {
-        font-size: $size-1-5;
+        font-size: 1.5rem;
         margin-top: 1rem;
     }
 
@@ -450,9 +462,7 @@ li {
     }
 
     .rodape__principal {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        @include flexbox(row, center, space-around);
         width: 100%;
     }
 
@@ -461,16 +471,14 @@ li {
     }
 
     .rodape__navegacao > li {
-        font-size: $size-1-5;;
+        font-size: 1.5rem;;
     }
    
     /** PERSONALIDADE **/
     /* --- OUTRA HEADER --- */
     .header-personalidade {
         padding: 0 20rem;
-        display: flex;
-        
-        align-items: flex-end;
+        @include flexbox($align-items: flex-end);
     }
 
     .header-personalidade__titulo {
@@ -492,16 +500,15 @@ li {
         margin: 0 4rem;
     }
     .secao-diva p {
-        font-size: $size-1-7;
+        font-size: 1.7rem;
     }
     .secao-diva__citacao p {
-        font-size: $size-2-5;
+        font-size: 2.5rem;
         padding: 4rem;
     }
     .secao-autora > div {
-        flex-direction: row;
+        @include flexbox($flex-direction:row, $justify-content: center);
         text-align: left;
-        justify-content: center;
         padding: 0;
     }
     .secao-autora__dados {
@@ -519,7 +526,7 @@ li {
         min-height: 90vh;
     }
     .navegacao__itens li {
-        font-size: $size-1-5;
+        font-size: 1.5rem;
         margin: 0 1rem;
     }
     .principal {
