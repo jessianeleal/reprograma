@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/*Variaveis*/
-/* Mixin com parametros */
 /* Mixin sem parametros */
 /*
 @mixin flexbox{
@@ -26,7 +23,6 @@ max-width: % ou px
 
 html {
   font-size: 10px;
-  /* definir uma font-size padrão */
 }
 
 body {
@@ -47,19 +43,16 @@ li {
   list-style: none;
 }
 
-/* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
   width: 100%;
 }
 
-/* define o tamanho da caixa */
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
 }
 
-/* --- BOTAO --- */
 .btn {
   text-transform: uppercase;
   font-weight: bold;
@@ -98,7 +91,6 @@ li {
   margin: 0 auto;
 }
 
-/* --- NAV --- */
 .navegacao {
   background-color: #674582;
   color: white;
@@ -116,7 +108,7 @@ li {
 }
 
 .navegacao__box {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -186,7 +178,69 @@ li {
   margin: 0 1rem;
 }
 
-/* --- HEADER --- */
+@media (min-width: 768px) {
+  .navegacao__itens {
+    position: static;
+    -webkit-display: fle;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    padding: 0;
+    width: auto;
+  }
+  .navegacao__itens ul {
+    -webkit-display: fle;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    text-align: center;
+  }
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 .6rem;
+  }
+  .navegacao__nav {
+    margin-bottom: 0;
+  }
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navegacao__box {
+    max-width: 80%;
+  }
+  .navegacao__itens li {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+}
+
 .header {
   min-height: 80vh;
   height: 500px;
@@ -195,7 +249,7 @@ li {
   background-size: cover;
   background-position: center 14%;
   background-repeat: no-repeat;
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -216,6 +270,20 @@ li {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .header {
+    min-height: 75vh;
+    text-align: left;
+    padding: 5rem 10rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    min-height: 90vh;
+  }
+}
+
 .principal__titulo {
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -228,7 +296,30 @@ li {
   font-size: 1.5rem;
 }
 
-/* --- SECTION MARAVILHOSAS --- */
+@media (min-width: 768px) {
+  .principal__titulo {
+    font-size: 2.9rem;
+  }
+  .principal__sub {
+    font-size: 1.8rem;
+  }
+  .principal__btn {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .principal {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .principal {
+    max-width: 650px;
+  }
+}
+
 .maravilhosas__titulo {
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   color: #674582;
@@ -237,7 +328,7 @@ li {
 }
 
 .maravilhosas__box {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -282,12 +373,25 @@ li {
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* --- FOOTER --- */
+@media (min-width: 768px) {
+  .maravilhosas {
+    padding: 4rem 0;
+  }
+  .maravilhosas__box > div {
+    max-width: 200px;
+    margin: 5rem;
+  }
+  .maravilhosas__perfil p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
 .rodape {
   background-color: #323534;
   color: white;
   font-size: .9rem;
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -307,7 +411,7 @@ li {
 }
 
 .rodape__principal {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -350,7 +454,7 @@ li {
 }
 
 .rodape__redes-sociais a {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -380,7 +484,7 @@ li {
 }
 
 .rodape__redes-sociais span {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -407,10 +511,38 @@ li {
   text-align: center;
 }
 
-/** ---- PERSONALIDADE ---- **/
-/* --- HEADER --- */
+@media (min-width: 768px) {
+  .rodape {
+    padding-top: 0;
+  }
+  .rodape__principal {
+    -webkit-display: fle;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .rodape__logo img {
+    max-width: 250px;
+  }
+  .rodape__navegacao > li {
+    font-size: 1.5rem;
+  }
+}
+
 .header-personalidade {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -439,9 +571,34 @@ li {
   text-transform: uppercase;
 }
 
-/* --- PEFIL DIVA--- */
+@media (min-width: 768px) {
+  .header-personalidade {
+    padding: 0 20rem;
+    -webkit-display: fle;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .header-personalidade__titulo {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
 .secao-diva {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -479,7 +636,7 @@ li {
 }
 
 .secao-diva__introducao {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -512,7 +669,7 @@ li {
 }
 
 .secao-diva__historia {
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -533,10 +690,30 @@ li {
   padding: 5rem 0;
 }
 
-/* --- AUTORA --- */
+@media (min-width: 1024px) {
+  .secao-diva__introducao {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 3rem 0;
+  }
+  .secao-diva__foto-perfil {
+    max-width: 100%;
+    margin: 0 4rem;
+  }
+  .secao-diva p {
+    font-size: 1.7rem;
+  }
+  .secao-diva__citacao p {
+    font-size: 2.5rem;
+    padding: 4rem;
+  }
+}
+
 .secao-autora {
   background-color: #e4b7e5;
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -556,7 +733,7 @@ li {
 
 .secao-autora > div {
   text-align: center;
-  -webkit-display: flex;
+  -webkit-display: fle;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -590,171 +767,9 @@ li {
   text-decoration: underline;
 }
 
-.secao-cta {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-/*** MEDIA QUERIES ***/
-/* TABLET */
-@media (min-width: 768px) {
-  /* --- NAV --- */
-  .navegacao__itens {
-    position: static;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-    padding: 0;
-    width: auto;
-  }
-  .navegacao__nav {
-    margin-bottom: 0;
-  }
-  .navegacao__itens ul {
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-    text-align: center;
-  }
-  .navegacao__itens li {
-    font-size: 1.2rem;
-    margin: 0 .6rem;
-  }
-  .navegacao__menu-hamburguer {
-    display: none;
-  }
-  /* --- HEADER --- */
-  .header {
-    min-height: 75vh;
-    text-align: left;
-    padding: 5rem 10rem;
-  }
-  .principal__titulo {
-    font-size: 2.9rem;
-  }
-  .principal__sub {
-    font-size: 1.8rem;
-  }
-  .principal__btn {
-    margin: 0;
-  }
-  /* --- SECTION MARAVILHOSAS --- */
-  .maravilhosas {
-    padding: 4rem 0;
-  }
-  .maravilhosas__box > div {
-    max-width: 200px;
-    margin: 5rem;
-  }
-  .maravilhosas__perfil p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  /* --- FOOTER --- */
-  .rodape {
-    padding-top: 0;
-  }
-  .rodape__principal {
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-  }
-  .rodape__logo img {
-    max-width: 250px;
-  }
-  .rodape__navegacao > li {
-    font-size: 1.5rem;
-  }
-  /** PERSONALIDADE **/
-  /* --- OUTRA HEADER --- */
-  .header-personalidade {
-    padding: 0 20rem;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-  }
-  .header-personalidade__titulo {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-}
-
 @media (min-width: 1024px) {
-  .principal {
-    max-width: 650px;
-  }
-  .secao-diva__introducao {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 3rem 0;
-  }
-  .secao-diva__foto-perfil {
-    max-width: 100%;
-    margin: 0 4rem;
-  }
-  .secao-diva p {
-    font-size: 1.7rem;
-  }
-  .secao-diva__citacao p {
-    font-size: 2.5rem;
-    padding: 4rem;
-  }
   .secao-autora > div {
-    -webkit-display: flex;
+    -webkit-display: fle;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -778,20 +793,8 @@ li {
   }
 }
 
-/* DESKTOP */
-@media (min-width: 1440px) {
-  .navegacao__box {
-    max-width: 80%;
-  }
-  .header {
-    min-height: 90vh;
-  }
-  .navegacao__itens li {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-  }
-  .principal {
-    max-width: 650px;
-  }
+.secao-cta {
+  text-align: center;
+  padding: 4rem 0;
 }
 /*# sourceMappingURL=style.css.map */
