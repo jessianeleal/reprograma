@@ -1,0 +1,11 @@
+@function adapta-tamanho($tam) {
+    @return $tam * $font-size;
+}
+
+@function cor($tipo-de-cor){
+    @return map-get($cores, $tipo-de-cor);
+}
+
+@function fontes($tipo-de-fonte){
+    @return map-get($fontes, $tipo-de-fonte);
+}

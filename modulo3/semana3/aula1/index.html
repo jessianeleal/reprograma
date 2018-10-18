@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Teste Bootstap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav-primary navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start bootstrap</a>
+            <!-- botão responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolioLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolioLink">
+                    <a class="dropdown-item" href="#">1 Column Portfolio</a>
+                    <a class="dropdown-item" href="#">2 Column Portfolio</a>
+                    <a class="dropdown-item" href="#">3 Column Portfolio</a>
+                    <a class="dropdown-item" href="#">4 Column Portfolio</a>
+                    <a class="dropdown-item" href="#">Single Portfolio Item</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlogLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownBlogLink">
+                    <a class="dropdown-item" href="#">Blog Home 1</a>
+                    <a class="dropdown-item" href="#">Blog Home 2</a>
+                    <a class="dropdown-item" href="#">Blog Post</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPagesLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Other Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPagesLink">
+                    <a class="dropdown-item" href="#">Full Width Page</a>
+                    <a class="dropdown-item" href="#">Sidebar Page</a>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                    <a class="dropdown-item" href="#">404</a>
+                    <a class="dropdown-item" href="#">Pricing Table</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel-banner carousel slide" data-ride="carousel">
+        <!-- indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <!-- imagens -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/augustin-de-montesquiou-426625-unsplash.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Torre Eiffel</h5>
+                <p>Vista dos arredores da Torre Eiffel</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="assets/leonard-cotte-300248-unsplash.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lavandas Francesas</h5>
+                <p>Campo de Lavanda na França</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="assets/leonard-cotte-309285-unsplash.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>A noite Francesa</h5>
+                <p>Famosa ponte ao anoitecer</p>
+            </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <main class="main-grid">
+        <div class="container">
+            <h1 class="title">Welcome to Modern Business</h1>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header bg-light"><h4>Card Title</h4></div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum vel error quia voluptas, iure delectus, quo dolores perferendis incidunt, rem enim fuga ipsam. Ratione maiores laboriosam omnis quo saepe!</p>
+                        </div>
+                        <div class="card-footer bg-light"><button type="button" class="btn btn-primary">Learn More</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header bg-light"><h4>Card Title</h4></div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a necessitatibus minus beatae maxime! Harum cumque aperiam vel voluptatum. Illum ipsa cumque consectetur dolore ipsum exercitationem quaerat sint dolorum quis!</p>
+                        </div>
+                        <div class="card-footer bg-light"><button type="button" class="btn btn-primary">Learn More</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header bg-light"><h4>Card Title</h4></div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto rem sint eligendi distinctio ipsa, optio adipisci aliquid dolorum odit doloremque officia velit, illo fuga porro repellendus cupiditate cumque nobis qui!</p>
+                        </div>
+                        <div class="card-footer bg-light"><button type="button" class="btn btn-primary">Learn More</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <h2>Portfolio Heading</h2>
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/photo1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/photo2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/photo3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/photo4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/photo5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/photo6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse, sed aliquam pariatur, laudantium veniam dignissimos accusamus cupiditate beatae rem aperiam. Inventore reprehenderit error aliquid accusamus commodi similique quia! Repudiandae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-6">
+                    <h2>Modern Business Features</h2>
+                    <p>The Modern Business template by Start Bootstrap includes:</p>
+                    <ul>
+                        <li>
+                            <strong>Bootstrap v4</strong>
+                        </li>
+                        <li>jQuery</li>
+                        <li>Font Awesome</li>
+                        <li>Working contact form with validation</li>
+                        <li>Unstyled page elements for easy customization</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia consequuntur natus molestias doloremque obcaecati explicabo vero iure illum aperiam nisi laborum exercitationem, eligendi nam minima, ducimus magnam corrupti? Magnam!</p>
+                </div>
+                <div class="col-lg-6 img-height">
+                    <img src="assets/photo7.jpg" alt="Foto de um barco navegando">
+                </div>
+            </div>
+            <div class="row row-margin row-border">
+                <div class="col-lg-8">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum cum aliquam sint accusantium incidunt odit, cumque officiis at reprehenderit vero impedit autem necessitatibus amet error temporibus nam, voluptates distinctio exercitationem.</p>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" data-target="#modalCallToAction" data-toggle="modal">Call to Action</button>
+                </div>
+                <div class="modal fade" id="modalCallToAction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </main> 
+    <footer class="py-5 bg-dark">
+            <p class="m-0 text-center text-white">Copyright © Your Website 2018</p>
+    </footer>
+        
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

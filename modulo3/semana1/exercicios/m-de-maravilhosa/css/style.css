@@ -32,7 +32,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: ligthten(#829dad, 0%);
 }
 
 ul {
@@ -108,7 +108,7 @@ li {
 }
 
 .navegacao__box {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -181,7 +181,7 @@ li {
 @media (min-width: 768px) {
   .navegacao__itens {
     position: static;
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -201,7 +201,7 @@ li {
     width: auto;
   }
   .navegacao__itens ul {
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -249,7 +249,7 @@ li {
   background-size: cover;
   background-position: center 14%;
   background-repeat: no-repeat;
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -328,7 +328,7 @@ li {
 }
 
 .maravilhosas__box {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -391,7 +391,7 @@ li {
   background-color: #323534;
   color: white;
   font-size: .9rem;
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -411,7 +411,7 @@ li {
 }
 
 .rodape__principal {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -454,7 +454,7 @@ li {
 }
 
 .rodape__redes-sociais a {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -484,7 +484,7 @@ li {
 }
 
 .rodape__redes-sociais span {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -516,7 +516,7 @@ li {
     padding-top: 0;
   }
   .rodape__principal {
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -542,7 +542,7 @@ li {
 }
 
 .header-personalidade {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -574,7 +574,7 @@ li {
 @media (min-width: 768px) {
   .header-personalidade {
     padding: 0 20rem;
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -598,7 +598,7 @@ li {
 }
 
 .secao-diva {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -636,7 +636,7 @@ li {
 }
 
 .secao-diva__introducao {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -669,7 +669,7 @@ li {
 }
 
 .secao-diva__historia {
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -713,7 +713,7 @@ li {
 
 .secao-autora {
   background-color: #e4b7e5;
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -733,7 +733,7 @@ li {
 
 .secao-autora > div {
   text-align: center;
-  -webkit-display: fle;
+  -webkit-display: flex;
   -ms-display: flex;
   -moz-display: flex;
   -o-display: flex;
@@ -769,7 +769,7 @@ li {
 
 @media (min-width: 1024px) {
   .secao-autora > div {
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;

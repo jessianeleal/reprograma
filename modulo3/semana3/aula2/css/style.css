@@ -1,0 +1,121 @@
+.nav-primary .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-primary img {
+    width: 5vh;
+    height: 7vh;
+    margin-right: 1.5vh;
+    margin-bottom: 2vh;
+}
+
+.logo-font {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}
+
+.logo-color {
+    color: rgb(158, 27, 158);
+    font-weight: bold;
+}
+
+.img-header {
+    width: 100%;
+    
+    object-fit: cover;
+    margin-top: 71px;
+    margin-bottom: 20px;
+}
+
+.img-height img{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 30%;
+}
+
+.img-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-jl {
+    margin-top: 40px;
+}
+.row-margin h3{
+    margin: 30px 0;
+}
+
+.jl h2 {
+    margin: 60px 0;
+}
+
+.row-margin>div {
+    margin: 20px 0;
+}
+
+.skill-jl {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.portfolio-jl{
+    text-align: center;
+}
+
+.portfolio-jl img{
+    width: 83vh;
+    height: 60vh;
+    margin-bottom: 10px;
+    /* object-fit: contain; */
+}
+
+.logo-font-portfolio {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-size: 250px;
+}
+
+.logo-color-portfolio{
+    color: rgb(158, 27, 158);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.btn-jl {
+    background-color: rgb(158, 27, 158);
+}
+
+.btn-jl:hover {
+    background-color: #007bff;
+}
+
+.contato-jl img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    
+}
+.footer-jl {
+    padding-top: 30px; 
+}
+
+.copy-jl {
+    font-size: 11px;
+}
+
+.link-jl img{
+    width: 6vh;
+    height: 6vh;
+}
+
+.error {
+    color: rgb(158, 27, 158);
+    font-weight: bold;
+    font-size: 12px; 
+}
+
+

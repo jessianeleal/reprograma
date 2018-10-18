@@ -12,3 +12,23 @@
     -moz-border-radius: $raio;
     -webkit-border-radius: $raio;
 }
+
+@mixin responsivo ($tipo) {
+    @if $tipo == phone {
+        @media only screen and (max-whidth:600px) {
+            @content;
+        }
+    }@else if $tipo == tab-port {
+        @media only screen and (max-whidth:980px){
+            @content;
+        }
+    }@else if $tipo == tab-land {
+        @media only screen and (max-whidth:1200px){
+            @content;
+        }
+    }@else {
+        @media only screen and (min-whidth:1800px){
+            @content;
+        }
+    }
+}

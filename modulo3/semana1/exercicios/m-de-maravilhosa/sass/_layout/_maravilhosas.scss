@@ -31,7 +31,7 @@
             }
         }
     }
-    @media (min-width: 768px) {
+    @include responsivo(tab-port) {
         padding: 4rem 0;
         &__box > div {
             max-width: 200px;

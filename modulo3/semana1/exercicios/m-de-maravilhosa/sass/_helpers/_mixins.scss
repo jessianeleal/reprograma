@@ -1,5 +1,5 @@
 @mixin flexbox($flex-direction: row, $align-items: normal, $justify-content: normal){
-    -webkit-display: fle;
+    -webkit-display: flex;
     -ms-display: flex;
     -moz-display: flex;
     -o-display: flex;
@@ -19,3 +19,19 @@
     -moz-display: flex;
     -o-display: flex;
 }*/
+
+@mixin responsivo ($tipo) {
+    @if $tipo == tab-port {
+        @media (min-width:768px) {
+            @content;
+        }
+    }@else if $tipo == tab-land {
+        @media (min-width:1024px){
+            @content;
+        }
+    }@else if $tipo == desktop {
+        @media (min-width:1440px){
+            @content;
+        }
+    }
+}

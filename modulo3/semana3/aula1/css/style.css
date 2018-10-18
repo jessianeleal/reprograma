@@ -1,0 +1,49 @@
+.nav-primary .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.carousel-banner{
+    margin-top: 56px
+}
+
+.carousel-banner img{
+    height: 65vh;
+    object-fit: cover;
+    
+}
+
+.carousel-banner h5{
+    font-size: 40px;
+}
+
+h1.title{
+    margin: 20px 0;
+}
+
+.main-grid img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.row-margin>div {
+    margin: 20px 0;
+}
+
+.img-height img{
+    width: 540px;
+    height: 340px;
+}
+
+.btn-padding {
+    padding: 10px 115px;
+    font-size: 20px;
+}
+
+.row-border {
+   
+    border-top: 2px solid lightgrey; 
+}
+
+div {
+    padding: 0;
+}

@@ -1,3 +1,18 @@
 // Variáveis
-$cor-primaria: #829dad;
+$cor-primaria:  lighten(#829dad, 0%);
 $cor-branca: #fff;
+
+$cores:(
+    primaria: ligthten(#829dad, 0%),
+    auxiliar: #000,
+    branco: #FFF
+);
+
+$fontes:(
+    principal: 'Nunito',
+    auxiliar: 'Arial, sans serif',
+    base: 'Monteserrat'
+);
+
+
+$font-size: 10px;
