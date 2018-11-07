@@ -39,39 +39,64 @@ class Div extends Ponto {
         this.largura = largura
     }
 
-    desenhar() {
-        const body = document.querySelector("body")
+    desenhar(container) {
         this.node = document.createElement("div")
         this.node.style.width = this.largura + "px"
         this.node.style.height = this.altura + "px"
         this.node.style.backgroundColor = this.cor
         this.node.style.left = this.x + "px"
         this.node.style.top = this.y + "px"
-        body.appendChild(this.node)
+        container.appendChild(this.node)
+    }
 
-        const that = this;
-
-        document.addEventListener("keydown", function(evento) {
-            evento.preventDefault();
-            const seta = evento.keyCode;
-            if(seta == 37) {
-                that.mover_horizontalmente(-10)
-                that.node.style.left = that.x + "px";
-            } else if(seta == 38) {
-                that.mover_verticalmente(-10)
-                that.node.style.top = that.y + "px";
-            } else if(seta == 39) {
-                that.mover_horizontalmente(10)
-                that.node.style.left = that.x + "px";
-            } else if(seta == 40) {
-                that.mover_verticalmente(10)
-                that.node.style.top = that.y + "px";
-            }
-        })
+    // direcao: up, down, left, right
+    mover_na_tela(direcao, incremento) {
+        if (direcao === "up") {
+            this.mover_verticalmente(-incremento)
+            this.node.style.top = this.y + "px"
+        } else if (direcao === "down") {
+            this.mover_verticalmente(incremento)
+            this.node.style.top = this.y + "px"
+        } else if (direcao === "left") {
+            this.mover_horizontalmente(-incremento)
+            this.node.style.left = this.x + "px"
+        } else if (direcao === "right") {
+            this.mover_horizontalmente(incremento)
+            this.node.style.left = this.x + "px"
+        }
     }
 }
-const bola = new Div ("Bolinha", "pink", 650, 300, 80, 80)
 
+const container = document.querySelector("main")
+const div0 = new Div("beatriz", "lime", 10, 10, 20, 20)
+div0.desenhar(container)
+const div1 = new Div("wanessa", "red", 40, 40, 20, 20)
+div1.desenhar(container)
+const divs = [div0, div1]
 
-bola.desenhar() 
+let active
+for (const div of divs) {
+    div.node.addEventListener("click", function (event) {
+        active = div
+    })
+}
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowUp") {
+        if (active.y > 0) {
+            active.mover_na_tela("up", 10)
+        }
+    } else if (event.key === "ArrowDown") {
+        if (active.y < (container.offsetHeight - active.altura)) {
+            active.mover_na_tela("down", 10)
+        }
+    } else if (event.key === "ArrowLeft") {
+        if (active.x > 0) {
+            active.mover_na_tela("left", 10)
+        }
+    } else if (event.key === "ArrowRight") {
+        if (active.x < (container.offsetWidth - active.largura)) {
+            active.mover_na_tela("right", 10)
+        }
+    }
+})
